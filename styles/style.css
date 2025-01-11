@@ -120,7 +120,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 500;
+    font-weight: 600;
     gap: 10px;
     border: 1px solid #ededef;
     background-color: white;
@@ -130,5 +130,4 @@
 
 .btn:hover {
     border: 1px solid #2d79f3;
-    ;
 }
