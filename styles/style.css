@@ -16,7 +16,8 @@
 .sign-card-left, .sign-card-right {
     border: 1px solid black;
     border-radius: 15px;
-    width: fit-content
+    width: fit-content;
+    box-shadow: 2px 3px 15px 2px rgba(104, 104, 104, 0.192);
 }
 
 .form {
