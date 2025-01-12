@@ -13,7 +13,8 @@
     height: 100vh;
 }
 
-.sign-card-left, .sign-card-right {
+.sign-card-left,
+.sign-card-right {
     border: 1px solid black;
     border-radius: 15px;
     width: fit-content;
@@ -165,4 +166,44 @@
 
 .icon {
     font-size: 20px;
+}
+
+
+#grid {
+    display: grid;
+    grid-template:
+        "header header header header header header" auto
+        "main main main main sidebar sidebar" auto
+        "main main main main sidebar sidebar" auto /
+        1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-header {
+    grid-area: header;
+    border: 1px solid red;
+}
+
+.grid-main {
+    grid-area: main;
+    border: 1px solid red;
+}
+
+.grid-sidebar {
+    grid-area: sidebar;
+    border: 1px solid red;
+}
+
+.main-flex {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.main-flex-item {
+    display: flex;
+    color: #151717;
+    margin: 20px;
+    width: auto;
+    height: 200px;
+    border-top: 1px solid blue;
 }
