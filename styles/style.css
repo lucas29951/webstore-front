@@ -240,8 +240,6 @@ body {
 
 .sign-card-left,
 .sign-card-right {
-.sign-card-left,
-.sign-card-right {
     border: 1px solid black;
     border-radius: 15px;
     width: fit-content;
