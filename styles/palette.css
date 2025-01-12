@@ -1,0 +1,22 @@
+
+:root {
+    /* CSS HEX */
+    --tomato: #fe4a49ff;
+    --light-red: #ff6d6dff;
+    --mustard: #fed766ff;
+    --jasmine: #ffe38eff;
+    --vivid-sky-blue: #5ac5e9ff;
+    --non-photo-blue: #8ee0fcff;
+    --emerald: #23ce6bff;
+    --spring-green: #0cf574ff;
+
+    /* CSS HSL */
+    --tomato: hsla(0, 99%, 64%, 1);
+    --light-red: hsla(0, 100%, 71%, 1);
+    --mustard: hsla(45, 99%, 70%, 1);
+    --jasmine: hsla(45, 100%, 78%, 1);
+    --vivid-sky-blue: hsla(195, 76%, 63%, 1);
+    --non-photo-blue: hsla(195, 95%, 77%, 1);
+    --emerald: hsla(145, 71%, 47%, 1);
+    --spring-green: hsla(147, 92%, 50%, 1);
+}
