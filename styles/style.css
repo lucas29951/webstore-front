@@ -216,23 +216,23 @@
     width: auto;
     height: 200px;
     border-top: 1px solid blue;
+}
 
-    .btn-search {
-        outline: 0 !important;
-        border: 0 !important;
-        width: 80%;
-        height: fit-content;
-        padding: 10px;
-        /* border-radius: 50%; */
-        border-radius: 10px;
-        background-color: transparent;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        /* color: #fff; */
-        /* background-color: rgb(73, 153, 245); */
-        background-color: white;
-        gap: 10px;
-        box-shadow: rgba(0, 0, 0, 0.35) 2px 2px 8px;
-    }
+.btn-search {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 80%;
+    height: fit-content;
+    padding: 10px;
+    /* border-radius: 50%; */
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* color: #fff; */
+    /* background-color: rgb(73, 153, 245); */
+    background-color: white;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 2px 2px 8px;
 }
