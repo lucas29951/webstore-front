@@ -13,59 +13,49 @@
 </head>
 <body>
     <div class="container">
-        <header class="header"></header>
-        <main class="main">
-            <div class="sign-card-left">
-                <form class="form">
-                    <div class="flex-column">
-                        <label>Name </label>
-                    </div>
-                    <div class="inputForm">
-                        <input placeholder="Enter your Name" class="input" type="text">
-                    </div>
-
-                    <div class="flex-column">
-                        <label>Email </label>
-                    </div>
-                    <div class="inputForm">
-                        <input placeholder="Enter your Email" class="input" type="text">
-                    </div>
-
-                    <div class="flex-column">
-                        <label>Password </label>
-                    </div>
-                    <div class="inputForm">
-                        <input placeholder="Enter your Password" class="input" type="password">
-                    </div>
-
-                    <button class="button-submit">Sign Up</button>
-                    
-                    <p class="p line">Or With</p>
-
-                    <div class="flex-row">
-                        <button class="btn google">
-                            <i class="fa-brands fa-google"></i> Google
-                        </button><button class="btn apple">
-                            <i class="fa-brands fa-apple"></i> Apple
-                        </button>
-                    </div>
-                </form>
+        <div class="header login">
+            <div class="logo-section">
+                <img class="logo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASVJREFUSEvllIttwkAQRIdOQiehE1IJUEnoJHRCOgGe5DmNz0f8kYyEspJ19t7ezuzsnjda2TYr59czgG9J+5ngJ0nnx7nfPNcCOEo6zEzucEA4X6wG+JB07XZ3ki6P51PST/eOD+Mb/1fH2jHsbbOKGsDSkNjJXFGyc9yYr9eDZJHAZuuKYEl/AEkiVE8sa6kiEyENm7WOt06WjE0p0+9qC3ALIDXMRHP8TBLxPYlSf5pHcqYJ6TBYTfUzrsT2AJJtPaUwYn+qvyhTT5H1dkIzITkVsvLgp1dY+k1gFGDpL2QwEM8qeCkATc5mWwaajkystkUV+H40ety7aOwvAmhdtGay/wHwl96tHrR85TdR32S+mRhfnKkJM24wWUvnfTL4+wPcAQZ2WRmCTBDiAAAAAElFTkSuQmCC" alt="logo" />
+                <span class="web-name">WEBSTORE</span>
             </div>
-            <div class="sign-card-right">
-                <form class="form">
-                    <div class="flex-column">
-                        <label>Email </label>
+            <div class="search-section">
+                <div class="normal">
+                    <img class="search-icon glass" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASlJREFUSEvVlVESATEMhv+9CSfBSXASnAQnwUlwEvabSWaCtttZ9SAvtbttvvxJGp1+bN2P/asEmEhaSZpJmve/b/16lnSXdLDnwfhygK2kTeE0sGP/nX1FSwFOFjEHdxY1kaMIJawO5/2iRHgHkJK9yV+b89R5IATCShBZJRHA5qt5IyqiKxlqgJCubDAR4HmngByoMdSiOqsiAnwzzoHUmKvI1iICSA9pmta2oO3nHGni3Id9C8Dhw7wmWz6+9PasKbBH6l2XrVurIlcBxrYparJ1G3vRvHv8tlddNM+rtyvPSL+ES+fjIs4pOoi6sRa7KH4cGnYe+dJaNQsZGtekwsc1TnGEIk9JnElJSIs/nCKkBQBlEfIyaloBHEJKX+ZYS0ByOP4/4AkPvk0Z2oqyOwAAAABJRU5ErkJggg==" alt="search-icon" />
+                    <input type="text" placeholder="Search Product here..." />
+                    <button class="search-btn">Search</button>
+                </div>
+                <div class="advanced">
+                    <button class="search-btn-advance">
+                        <img class="search-icon advance" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAH9JREFUSEvVlFEKwCAMQ+P9Dz1hTJBhbTJbmX5K6zNNtCB5leTz8RvA9SiVL8Q2hADaITNb2oXo2l4B3QSArt06otloQjz48iRcMDsiCy4BGOMs0Chd956aoiXA+R70ClzzWLlWilIAoxQpf89bFJWiUMD5HrDBkOpW/yIXlg6ogyYYGS2nFSQAAAAASUVORK5CYII=" alt="advanced-icon"/>
+                    </button>
+                </div>
+            </div>
+            <div class="auth-section">
+                <button class="auth-btn">
+                    <div class="sign">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYpJREFUSEu1letNxDAQhOc6gUqASoBKgEqASoBKoBPgQ55osnac8OMinSC2M4+dtX3SmZ/TmfF1hOBC0p2kW0n8/9VEvUv6+B17mYmcEVxLem6gMwwIn7aItggeJT00VABeJaGYHy4g52+6Yg3frZ4RQYJj/34i3+WzGJysSCoByt4a4E1TzCtAgJAFjvhB7DwYp5wex+nfUwkAhySVA/45cAEYIkwCgQVcjghSxbKgKWMOVQCmG4/ZJQKZX9ynAyuodUQ9H0FqtXbFe4pxfksFksBA1DZ7e0SA4u9BmZ3hQpwE/iCVglFzQT1ua1YuE4L+RbAVMoBVTOcsHVhptqebIVWjjnDJypl4nRtlCX9E0G2W2L3ZrSbKsWnIXUClJUcbmmZIJ26IYZuOAnXZmEvFPo88ThZeu2rdupMzUOqIq9rrmYs3ltcyt8pw77DrPih1cqgernto88LZO64BzEuI9w58dNilwGzNUcAe607QXHzkykTpVbSqj2uuS19CmwKOEMzU786dneAH8Cx7GeNZJZkAAAAASUVORK5CYII=" alt="user-icon" />
                     </div>
-                    <div class="inputForm">
-                        <input placeholder="Enter your Email" class="input" type="text">
-                    </div>
+                    <div class="text">Logout</div>
+                </button>
+            </div>
+        </div>
 
-                    <div class="flex-column">
-                        <label>Password </label>
-                    </div>
-                    <div class="inputForm">
-                        <input placeholder="Enter your Password" class="input" type="password">
-                    </div>
+        <div class="forms">
+            <div class="form-container">
+                <header class="form-header">
+                    <h1 class="form-title">Sign In</h1>
+                    <span class="table-code">T4</span>
+                </header>
+                <form class="card-form">
+                    <label for="email" class="form-label">
+                        <i class="fa-regular fa-envelope"></i> Email
+                    </label>
+                    <input type="email" id="email" class="form-input" placeholder="example@yahoo.com">
+
+                    <label for="password" class="form-label">
+                        <i class="fa-solid fa-lock"></i> Password
+                    </label>
+                    <input type="password" id="password" class="form-input" placeholder="**************">
 
                     <div class="flex-row">
                         <div>
@@ -74,11 +64,49 @@
                         </div>
                         <span class="span">Forgot password?</span>
                     </div>
-                    <button class="button-submit">Sign In</button>
+
+                    <button type="button" class="submit-btn enter">Enter</button>
+
+                    <p class="p line">Or With</p>
+
+                    <div class="flex-row social-buttons">
+                        <button class="btn google">
+                            <i class="fa-brands fa-google"></i> Google
+                        </button>
+                        <button class="btn apple">
+                            <i class="fa-brands fa-apple"></i> Apple
+                        </button>
+                    </div>
                 </form>
             </div>
-        </main>
-        <footer class="footer"></footer>
+
+            <span class="separator"></span>
+
+            <div class="form-container">
+                <header class="form-header">
+                    <h1 class="form-title">Sign Up</h1>
+                    <span class="table-code">T4</span>
+                </header>
+                <form class="card-form">
+                    <label for="name" class="form-label">
+                        <i class="fa-solid fa-user"></i> Name
+                    </label>
+                    <input type="text" id="name" class="form-input" placeholder="Robert Fox">
+
+                    <label for="email" class="form-label">
+                        <i class="fa-regular fa-envelope"></i> Email
+                    </label>
+                    <input type="email" id="email" class="form-input" placeholder="example@yahoo.com">
+
+                    <label for="password" class="form-label">
+                        <i class="fa-solid fa-lock"></i> Password
+                    </label>
+                    <input type="password" id="password" class="form-input" placeholder="**************">
+
+                    <button type="button" class="submit-btn register">Register</button>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
