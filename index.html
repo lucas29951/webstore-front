@@ -13,26 +13,165 @@
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <div class="button-container">
-                <button class="button">
-                    <i class="icon fa-solid fa-house"></i>
-                </button>
-                <div class="btn-search">
-                    <input type="text" class="input">
-                    <i class="icon fa-solid fa-magnifying-glass"></i>
+        <div class="header">
+            <div class="logo-section">
+              <img class="logo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASVJREFUSEvllIttwkAQRIdOQiehE1IJUEnoJHRCOgGe5DmNz0f8kYyEspJ19t7ezuzsnjda2TYr59czgG9J+5ngJ0nnx7nfPNcCOEo6zEzucEA4X6wG+JB07XZ3ki6P51PST/eOD+Mb/1fH2jHsbbOKGsDSkNjJXFGyc9yYr9eDZJHAZuuKYEl/AEkiVE8sa6kiEyENm7WOt06WjE0p0+9qC3ALIDXMRHP8TBLxPYlSf5pHcqYJ6TBYTfUzrsT2AJJtPaUwYn+qvyhTT5H1dkIzITkVsvLgp1dY+k1gFGDpL2QwEM8qeCkATc5mWwaajkystkUV+H40ety7aOwvAmhdtGay/wHwl96tHrR85TdR32S+mRhfnKkJM24wWUvnfTL4+wPcAQZ2WRmCTBDiAAAAAElFTkSuQmCC" alt="logo"/>
+              <span class="web-name">WEBSTORE</span>
+            </div>
+            <div class="search-section">
+                <div class="normal">
+                    <img class="search-icon glass" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASlJREFUSEvVlVESATEMhv+9CSfBSXASnAQnwUlwEvabSWaCtttZ9SAvtbttvvxJGp1+bN2P/asEmEhaSZpJmve/b/16lnSXdLDnwfhygK2kTeE0sGP/nX1FSwFOFjEHdxY1kaMIJawO5/2iRHgHkJK9yV+b89R5IATCShBZJRHA5qt5IyqiKxlqgJCubDAR4HmngByoMdSiOqsiAnwzzoHUmKvI1iICSA9pmta2oO3nHGni3Id9C8Dhw7wmWz6+9PasKbBH6l2XrVurIlcBxrYparJ1G3vRvHv8tlddNM+rtyvPSL+ES+fjIs4pOoi6sRa7KH4cGnYe+dJaNQsZGtekwsc1TnGEIk9JnElJSIs/nCKkBQBlEfIyaloBHEJKX+ZYS0ByOP4/4AkPvk0Z2oqyOwAAAABJRU5ErkJggg==" alt="search-icon"/>
+                    <input type="text" placeholder="Search Product here..." />
+                    <button class="search-btn">Search</button>
                 </div>
-                <button class="button">
-                    <i class="icon fa-solid fa-cart-shopping"></i>
-                </button>
-
-                <button class="button">
-                    <i class="icon fa-solid fa-user"></i>
+                <div class="advanced">
+                    <button class="search-btn-advance">
+                        <img class="search-icon advance" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAH9JREFUSEvVlFEKwCAMQ+P9Dz1hTJBhbTJbmX5K6zNNtCB5leTz8RvA9SiVL8Q2hADaITNb2oXo2l4B3QSArt06otloQjz48iRcMDsiCy4BGOMs0Chd956aoiXA+R70ClzzWLlWilIAoxQpf89bFJWiUMD5HrDBkOpW/yIXlg6ogyYYGS2nFSQAAAAASUVORK5CYII="/ alt="advanced-icon">
+                    </button>
+                </div>
+            </div>
+            <div class="auth-section">
+                <button class="auth-btn">
+                    <div class="sign">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYpJREFUSEu1letNxDAQhOc6gUqASoBKgEqASoBKoBPgQ55osnac8OMinSC2M4+dtX3SmZ/TmfF1hOBC0p2kW0n8/9VEvUv6+B17mYmcEVxLem6gMwwIn7aItggeJT00VABeJaGYHy4g52+6Yg3frZ4RQYJj/34i3+WzGJysSCoByt4a4E1TzCtAgJAFjvhB7DwYp5wex+nfUwkAhySVA/45cAEYIkwCgQVcjghSxbKgKWMOVQCmG4/ZJQKZX9ynAyuodUQ9H0FqtXbFe4pxfksFksBA1DZ7e0SA4u9BmZ3hQpwE/iCVglFzQT1ua1YuE4L+RbAVMoBVTOcsHVhptqebIVWjjnDJypl4nRtlCX9E0G2W2L3ZrSbKsWnIXUClJUcbmmZIJ26IYZuOAnXZmEvFPo88ThZeu2rdupMzUOqIq9rrmYs3ltcyt8pw77DrPih1cqgernto88LZO64BzEuI9w58dNilwGzNUcAe607QXHzkykTpVbSqj2uuS19CmwKOEMzU786dneAH8Cx7GeNZJZkAAAAASUVORK5CYII=" alt="user-icon"/>
+                    </div>
+                    <div class="text">Logout</div>
                 </button>
             </div>
-        </header>
-        <main class="main"></main>
-        <footer class="footer"></footer>
+          </div>
+
+          <div class="main-content">
+            <div class="menu-filters">
+              <button class="filter active">
+                <img class="filter-icon active" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAIhJREFUSEtjZKAxYKSx+Qx0t2A/AwODAw5fPWBgYFCEyhGrDsMH/wkEGczHxKrDaQF60MEMRLeAkLpRCwiHAK4wxBXXFEfyfAYGhgQcph9gYGBwhMoRq47+GY3qJQd6HBCbQ4lVN5qTyc8HhMoY9LIJljgwxAkZhEsjxRaM5mR4CNC9TqZ6UQEAcrU4GRm3fs4AAAAASUVORK5CYII=" alt="icon-filter-all"/>
+                <div class="filter-texts active">
+                    <p class="filter-name">All</p>
+                    <p class="filter-count">235 Items</p>
+                </div>
+              </button>
+              <button class="filter">
+                <img class="filter-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARpJREFUSEvVldENwjAMRK+bMApsApvAJMAkwCSwCfQiHJlgOw5SP/APQil+18vZTFi4poX7Iwu4v4VcAdwAnLLCMoAtgKPR8DHDNgD46VYGQPUrpwObn+ezvUfIAJ4JO2jZwXqbHsCzx2ISsmsPeoALgHXiDeQRAj4C0ANk7NH8r4uPACP2aAijzHSVigCMJiFesZF4zme1lbVvBOjZQ5WEsBhjGUZ+r2ceQNvjKdUAqmcgpBjZMhseQNvjKSVYst9aVO/BA+jpjZRG91Mu2gK06YmUtgBZHZyFsqMsQC89XlNzH1mAaLlJc1nb7pLz5iBazdyafO30f4FlkY6b+Em1kveBtWRPMgeGEDb/ualW0Vt2w4rbH/w/4AWKOUQZaYLsDgAAAABJRU5ErkJggg==" alt="icon-filter-food"/>
+                <div class="filter-texts">
+                    <p class="filter-name">Food</p>
+                    <p class="filter-count">19 Items</p>
+                </div>
+              </button>
+              <button class="filter">
+                <img class="filter-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJlJREFUSEvtlNENgCAMRJ+b6CY6mXESV3ET3UTBSAIoUgP4o/3pT3vHtfQqCkdVGJ9XCVqgB3ROiQkYFI7OjoIZqFOQrV4N3vkE61GQOjYHxwb7CcwK/hFFP/IHRhSdgbBgv7GrQxP2R8tOBDm9aAEaX4F20TGD4QXdNKpZ2fljv3rqnEUIDGhI4e0jJQqKE0h2E6yRKEgi2AB2oSIZKwuh+gAAAABJRU5ErkJggg==" alt="icon-filter-tech"/>
+                <div class="filter-texts">
+                    <p class="filter-name">Tech</p>
+                    <p class="filter-count">6 Items</p>
+                </div>
+              </button>
+              <button class="filter">
+                <img class="filter-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASBJREFUSEu1lYENwiAURK+b6CTqJOok6iTqJLqJbqJ9ht98CUWglsQUqL37d/1cO808upnx9S+Cs6S1pKekaz+/h/lkgoUkA/dmnPrFkY0pCjw4lW+CCghRwLqZIAZfhvLZfwR7PnstCnLgZtdF0r6FoAQcu0xRlYJq8BoFTeClBM3gJQSTwHMEnEo6AgIb1uus/ckdXmgqdlJtCvgtAjYiSPhZLGTBxxQADsBw3HvQnaSDU/TVirnATCl4hQfie9gCUTH4mIIxAsILFV7Zz7SPq7QsSZGbAiKAKCgangDfqZDrkIZRiLHkxWJT0fAEpKB1C1FrHYPvVM+osie2AY+3Ue/7KmNV1Qp4AAVUvApz1vhtn8EiUP+nlu9BFcnsBG/F8EoZisSJOQAAAABJRU5ErkJggg==" alt="icon-filter-beauty"/>
+                <div class="filter-texts">
+                    <p class="filter-name">Beauty</p>
+                    <p class="filter-count">14 Items</p>
+                </div>
+              </button>
+              <button class="filter">
+                <img class="filter-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMNJREFUSEvtlYENwjAMBK+bsAkwCXQSYBLYBJiEbgL5KpFSJ40UQQVIsVSlbRx//X67HQtbt3B8SgAbYAdo3QKD+ZgVcHZ7d+CS2R/dLcAeWPugChDs5G6OBkDPh+jdzYNp1ZUAXH3gOdZ6f1CZ2OD2jDKS/ySD54frMbITU/T/AA+nhriw7zKWUBQUJNlJBQKsMUlZJmkH6Rb7oLYm2Z4qNVoDyI6KuKiNokZR0uS/12g1w0+zK8yiSWpf/enXTNJZ3xc/xCYZj2ucVQAAAABJRU5ErkJggg==" alt="icon-filter-clothe"/>                <div class="filter-texts">
+                    <p class="filter-name">Clothe</p>
+                    <p class="filter-count">67 Items</p>
+                </div>
+              </button>
+              <button class="filter">
+                <img class="filter-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARVJREFUSEu1lbENwjAQRV8kegaggQWYAQoKVmIElmALoIMl6FkEgS6y0cmcz75IpIlCkv/I97/vgT8fw5/1sQBL4ARsDPgT2AJy7jpKgCeeBUMQDdDiIrIq/qLcvwFy7oZogLwstljimRWGaMA7qejfFsAauKivCUE8gIg/gDlwBfZTIB5ABM9J9AXMpqxJyyKxZgccgYORy6ZdFkDS053zlKpqumopCg2TBynnIJxzZ+HHObImeSpED+o9VUq1i6KQagvU2rSZjsKaXI4/LeDVdQ+k1V+mRTruHqQpbi2y1fEWRJ6r2qJFene0EiJet5p35PQC5FkNkWuv1r8fEQFkiFgjsHJDMrfQKKBrH56yBmHh/MIHqGNbGTvibdoAAAAASUVORK5CYII=" alt="icon-filter-promo"/>
+                <div class="filter-texts">
+                    <p class="filter-name">Promo</p>
+                    <p class="filter-count">13 Items</p>
+                </div>
+              </button>
+            </div>
+
+            <div class="container-items">
+              <div class="item-card">
+                <!-- <img src="https://placehold.co/600x400" alt="Tasty Vegetable Salad"> -->
+                <img src="./assets/products/apple-watch.png" alt="Tasty Vegetable Salad">
+                <div class="card-content">
+                  <p class="item-name">Apple Watch</p>
+                  <div class="inner-content">
+                    <p class="item-price">$17.99</p>
+                    <p class="tag tech">Tech</p>
+                  </div>
+                  <button class="add-btn">Add to Dish</button>
+                </div>
+              </div>
+              <div class="item-card">
+                <!-- <img src="https://placehold.co/600x400" alt="Tasty Vegetable Salad"> -->
+                <img src="./assets/products/black-mug.png" alt="Tasty Vegetable Salad">
+                <div class="card-content">
+                  <p class="item-name">Black Mug</p>
+                  <div class="inner-content">
+                    <p class="item-price">$17.99</p>
+                    <p class="tag promo">Promo</p>
+                  </div>
+                  <button class="add-btn">Add to Dish</button>
+                </div>
+              </div>
+              <div class="item-card">
+                <!-- <img src="https://placehold.co/600x400" alt="Tasty Vegetable Salad"> -->
+                <img src="./assets/products/black-t-shirt-short.png" alt="Tasty Vegetable Salad">
+                <div class="card-content">
+                  <p class="item-name">Black T-Shirt</p>
+                  <div class="inner-content">
+                    <p class="item-price">$17.99</p>
+                    <p class="tag clothe">Clothe</p>
+                  </div>
+                  <button class="add-btn">Add to Dish</button>
+                </div>
+              </div>
+              <div class="item-card">
+                <!-- <img src="https://placehold.co/600x400" alt="Tasty Vegetable Salad"> -->
+                <img src="./assets/products/brown-leather-shoes.png" alt="Tasty Vegetable Salad">
+                <div class="card-content">
+                  <p class="item-name">Leather Shoes</p>
+                  <div class="inner-content">
+                    <p class="item-price">$17.99</p>
+                    <p class="tag clothe">Clothe</p>
+                  </div>
+                  <button class="add-btn">Add to Dish</button>
+                </div>
+              </div>
+              <div class="item-card">
+                <!-- <img src="https://placehold.co/600x400" alt="Tasty Vegetable Salad"> -->
+                <img src="./assets/products/flat-screen-television.png" alt="Tasty Vegetable Salad">
+                <div class="card-content">
+                  <p class="item-name">Flat Screen TV</p>
+                  <div class="inner-content">
+                    <p class="item-price">$17.99</p>
+                    <p class="tag tech">Tech</p>
+                  </div>
+                  <button class="add-btn">Add to Dish</button>
+                </div>
+              </div>
+              <div class="item-card">
+                <!-- <img src="https://placehold.co/600x400" alt="Tasty Vegetable Salad"> -->
+                <img src="./assets/products/headphones.png" alt="Tasty Vegetable Salad">
+                <div class="card-content">
+                  <p class="item-name">Headphones</p>
+                  <div class="inner-content">
+                    <p class="item-price">$17.99</p>
+                    <p class="tag promo">Promo</p>
+                  </div>
+                  <button class="add-btn">Add to Dish</button>
+                </div>
+              </div>
+              <div class="item-card">
+                <!-- <img src="https://placehold.co/600x400" alt="Tasty Vegetable Salad"> -->
+                <img src="./assets/products/iphone.png" alt="Tasty Vegetable Salad">
+                <div class="card-content">
+                  <p class="item-name">Iphone 13 Pro</p>
+                  <div class="inner-content">
+                    <p class="item-price">$17.99</p>
+                    <p class="tag tech">Tech</p>
+                  </div>
+                  <button class="add-btn">Add to Dish</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
 </body>
 </html>
