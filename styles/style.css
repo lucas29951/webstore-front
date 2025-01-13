@@ -6,6 +6,14 @@
     font-family: "Lexend Exa";
 }
 
+:root {
+    /* combo */
+    --arrow-bg: black;
+    --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+    --option-bg: white;
+    --select-bg: rgba(255, 255, 255, 0.2);
+}
+
 .main {
     display: flex;
     gap: 50px;
@@ -182,15 +190,11 @@
 #grid {
     display: grid;
     grid-template:
-        "header header header header header header" auto
-        "main main main main sidebar sidebar" auto
-        "main main main main sidebar sidebar" auto /
-        1fr 1fr 1fr 1fr 1fr 1fr;
-}
+        "main sidebar"
+        "main sidebar";
+    grid-template-columns: 1344px 555px;
+    grid-template-rows: auto;
 
-.grid-header {
-    grid-area: header;
-    border: 1px solid red;
 }
 
 .grid-main {
@@ -209,14 +213,115 @@
     margin: 20px;
 }
 
+.title-cart {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    width: fit-content;
+}
+
 .main-flex-item {
     display: flex;
     color: #151717;
     margin: 20px;
     width: auto;
     height: 200px;
-    border-top: 1px solid blue;
+    border: 1px solid blue;
+    flex-direction: row;
 }
+
+.wrapper-img {
+    padding-top: 20px;
+    border: 1px solid red;
+}
+
+.container-details-prod {
+    border: 1px solid red;
+    display: flex;
+    margin-right: 238px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-pr-st {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 1px solid red;
+}
+
+
+select {
+    /* Reset */
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    width: 35rem;
+    padding: 1rem 4rem 1rem 1rem;
+    background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+        linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+    color: black;
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+    /* Remove IE arrow */
+    &::-ms-expand {
+        display: none;
+    }
+
+    /* Remove focus outline */
+    &:focus {
+        outline: none;
+    }
+
+    /* <option> colors */
+    option {
+        color: inherit;
+        background-color: var(--option-bg);
+    }
+
+}
+
+.container-side-elem {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-icons {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container-icon-trash {
+    display: flex;
+    padding: 0 50px 0 50px;
+    border-left: 1px solid grey;
+    flex-direction: row-reverse;
+}
+
+.container-icon-heart {
+    padding: 0 50px 0 50px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+h4 {
+    padding-left: 10px;
+}
+
+#price {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 30px;
+    border: 1px solid red;
+}
+
 
 .btn-search {
     outline: 0 !important;
