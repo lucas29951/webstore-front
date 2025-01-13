@@ -18,6 +18,12 @@
     --non-photo-blue: hsla(195, 95%, 77%, 1);
     --emerald: hsla(145, 71%, 47%, 1);
     --spring-green: hsla(147, 92%, 50%, 1);
+
+    /* combo box */
+    --arrow-bg: black;
+    --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+    --option-bg: white;
+    --select-bg: rgba(255, 255, 255, 0.2);
 }
 
 /* ################################################# */
@@ -27,14 +33,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Lexend Exa";
-}
-
-:root {
-    /* combo box */
-    --arrow-bg: black;
-    --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
-    --option-bg: white;
-    --select-bg: rgba(255, 255, 255, 0.2);
 }
 
 body {
@@ -571,6 +569,11 @@ body {
 
 .icon {
     font-size: 20px;
+}
+
+#body-cart {
+    display: inline;
+    padding: 0;
 }
 
 
