@@ -226,6 +226,72 @@ body {
     transform: translate(2px ,2px);
   }
 
+  
+.main-content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.filter {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #f1f1f1;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+
+.filter.active {
+    /* background: #27ae60; */
+    background: #27ae5f77;
+    color: #333;
+}
+
+.filter.active:hover {
+    background: #27ae60;
+}
+
+.filter:hover {
+    /* background: #ddd; */
+    background: #27ae5f38;
+}
+
+.filter-icon {
+    align-self: flex-start;
+}
+
+.filter-icon.active {
+    filter: invert(35%);
+}
+
+.filter-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    margin-left: -20px;
+}
+
+.filter-count {
+    font-size: 0.6rem;
+    font-weight: 600;
+}
 
 /* ################################################# */
 
