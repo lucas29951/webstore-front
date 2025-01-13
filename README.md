@@ -6,7 +6,7 @@ Este proyecto fue realizado con el objetivo principal de poner en práctica los 
 
 1. **Descripción**
 2. **Funcionalidades**
-3. **Objetivos**
+3. **Características**
 4. **Tecnologías Utilizadas**
 5. **Capturas de Pantalla**
 6. **Instalación**
