@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Star wars product card - Coding Torque</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <div class="card-far-right"></div>
+    <div class="card">
+        <div class="left">
+            <!-- <div class="slider"><i class="fas fa-arrow-left"></i></div><img class="wordmark"
+                    src="http://res.cloudinary.com/prvnbist/image/upload/v1508603572/starwars.png" alt="star wars" /> -->
+
+        </div>
+        <div class="right">
+            <div class="productInfo">
+                <h1>STORMTROOPER <br> HELMET</h1>
+                <h2>$1,299.99</h2>
+                <div class="details">
+                    <div class="size">
+                        <h4>HELMET SIZE</h4>
+                        <p>S</p>
+                        <p>M</p>
+                        <p>L</p>
+                        <p>XL</p>
+                    </div>
+                    <div class="durability">
+                        <h3>75%</h3>
+                        <h4>DURABILITY <br> RATE</h4>
+                    </div>
+                </div>
+                <button>ADD TO CART</button><i class="fas fa-star"></i>
+                <a href="#">ADD TO WISHLIST</a>
+            </div>
+            <div class="slider-container">
+                <!-- Radio buttons to control slides -->
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+        
+                <div class="slider-images">
+                    <img src="assets/products/apple-watch.png" alt="Image 1" class="slider-image">
+                    <img src="assets/products/black-t-shirt-short.png" alt="Image 2" class="slider-image" >
+                    <img src="assets/products/lcd-monitor.png" alt="Image 3" class="slider-image">
+                </div>
+        
+                <!-- Dots for navigation -->
+                <div class="dots">
+                    <label for="slide1" class="dot"></label>
+                    <label for="slide2" class="dot"></label>
+                    <label for="slide3" class="dot"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
