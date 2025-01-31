@@ -568,7 +568,7 @@ body {
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:800");
 
-.details-view-main{
+.details-view-main {
     display: flex;
     align-items: center;
 }
@@ -582,7 +582,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    display: none;  
+    display: none;
 }
 
 button {
@@ -662,22 +662,81 @@ button:focus {
     height: 145px;
 }
 
-.card .right .productInfo .details .size,
-.card .right .productInfo .details .durability {
+.card .right .productInfo .details .rate-left,
+.card .right .productInfo .details .rate-right {
     width: 50%;
     float: left;
 }
 
-.card .right .productInfo .details .size {
+.card .right .productInfo .details .rate-left {
     border-right: 1px solid #cb1f40;
     padding: 30px 0;
+    height: 145px;
+    /* text-align: center; */
 }
 
-.card .right .productInfo .details .durability {
+.card .right .productInfo .details .rate-left .n-solds span {
+    position: relative;
+    bottom: 25px;
+}
+
+.card .right .productInfo .details .rate-left .n-reviews span {
+    position: relative;
+    bottom: 10px;
+}
+
+.card .right .productInfo .details .rate-left span {
+    padding-left: 15px;
+}
+
+.card .right .productInfo .details .rate-left .container-reputation-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+
+.card .right .productInfo .details .rate-left .container-reputation-top div {
+    border-radius: 50%;
+    border: 2px solid #cb1f40;
+    border-top-color: rgb(203, 31, 64);
+    border-top-color: transparent;
+    transform: rotateZ(-45deg);
+}
+
+.card .right .productInfo .details .rate-left .container-reputation-top div:nth-of-type(3) {
+    border-top-color: rgb(203, 31, 64);
+}
+
+.card .right .productInfo .details .rate-left .container-reputation-top p {
+    transform: rotateZ(45deg);
+    font-size: 14px;
+    margin: 10px 5px;
+    overflow: hidden;
+}
+
+.card .right .productInfo .details .rate-left .container-reputation-top div:nth-of-type(3) p {
+    margin: 10px 5px;
+    font-size: 12px;
+}
+
+.card .right .productInfo .details .rate-left .container-reputation-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card .right .productInfo .details .rate-left .container-reputation-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card .right .productInfo .details .rate-right {
     text-align: center;
 }
 
-.card .right .productInfo .details .durability h4 {
+.card .right .productInfo .details .rate-right h4 {
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -735,7 +794,7 @@ button:focus {
     margin-bottom: 15px;
 }
 
-.card .right .productInfo p {
+/* .card .right .productInfo p {
     width: 30px;
     height: 30px;
     display: inline-block;
@@ -748,15 +807,15 @@ button:focus {
     transition: 0.3s linear;
     border: 1px solid transparent;
     cursor: pointer;
-}
+} */
 
-.card .right .productInfo p:hover {
+/* .card .right .productInfo p:hover {
     border: 1px solid #cb1f40;
 }
 
 .card .right .productInfo p:nth-of-type(1) {
     border: 1px solid #cb1f40;
-}
+} */
 
 .slider {
     width: 60px;
@@ -785,12 +844,13 @@ button:focus {
     }
 }
 
+
 /* ################################################    SLIDER DOTS    ############################################################ */
 
 
 .slider-container {
     position: relative;
-    transform: translate(-50%,-80%);
+    transform: translate(-50%, -80%);
     width: 450px;
     overflow: hidden;
     /* border: 2px solid #ddd; */
@@ -813,7 +873,7 @@ button:focus {
     position: absolute;
     bottom: 10px;
     left: 50%;
-    transform: translate(-50%,-350%);
+    transform: translate(-50%, -350%);
     display: flex;
     gap: 8px;
 }
@@ -832,15 +892,15 @@ button:focus {
 }
 
 /* Hide all images except the first one */
-.slider-images input:nth-child(1):checked ~ .slider-images {
+.slider-images input:nth-child(1):checked~.slider-images {
     transform: translateX(0);
 }
 
-.slider-images input:nth-child(2):checked ~ .slider-images {
+.slider-images input:nth-child(2):checked~.slider-images {
     transform: translateX(-150px);
 }
 
-.slider-images input:nth-child(3):checked ~ .slider-images {
+.slider-images input:nth-child(3):checked~.slider-images {
     transform: translateX(-300px);
 }
 
