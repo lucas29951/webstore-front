@@ -564,7 +564,369 @@ body {
     background-color: #afaeae;
 }
 
-/* ############################################################################################################ */
+/* #############################################    DETAILS VIEW    ############################################################ */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:800");
+
+.details-view-main {
+    display: flex;
+    align-items: center;
+}
+
+.card-far-right {
+    width: 700px;
+    height: 553px;
+    background: #0c1f2c;
+    border-radius: 23px;
+    transform: translateX(50%);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.card {
+    width: 892px;
+    height: auto;
+    position: absolute;
+    /* top: 50%;
+  left: 50%; */
+    transform: translate(-30%, 0);
+    display: flex;
+    align-items: center;
+}
+
+.card .left {
+    width: 480px;
+    height: 553px;
+    background: #cc3843;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+}
+
+.card .left .wordmark {
+    opacity: 0.2;
+    transform: rotate(-90deg) scale(1.2);
+    margin-left: -90px;
+}
+
+.card .right {
+    width: 654px;
+    height: 479px;
+    background: #0c1f2c;
+    position: absolute;
+    left: -10%;
+    transform: translateX(50%);
+    border-radius: 23px;
+}
+
+.card .right .helmet {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card .right .productInfo {
+    width: 300px;
+    height: 300px;
+    margin: 50px 0 0 235px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+.card .right .productInfo h1 {
+    font-weight: 800;
+    line-height: 46px;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card .right .productInfo h2 {
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: 1.6px;
+    margin-bottom: 30px;
+}
+
+.card .right .productInfo .details {
+    height: 145px;
+}
+
+.card .right .productInfo .details .rate-left,
+.card .right .productInfo .details .rate-right {
+    width: 50%;
+    float: left;
+}
+
+.card .right .productInfo .details .rate-left {
+    border-right: 1px solid #cb1f40;
+    padding: 30px 0;
+    height: 135px;
+    padding-right: 8px;
+    /* text-align: center; */
+}
+
+.card .right .productInfo .details .rate-left .n-solds span {
+    position: relative;
+    bottom: 25px;
+}
+
+.card .right .productInfo .details .rate-left .n-reviews span {
+    position: relative;
+    bottom: 10px;
+}
+
+.card .right .productInfo .details .rate-left span {
+    padding-left: 15px;
+}
+
+.card .right .productInfo .details .rate-left .container-reputation-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+
+.card .right .productInfo .details .rate-left .container-reputation-top div {
+    border-radius: 50%;
+    border: 2px solid #cb1f40;
+    border-top-color: rgb(203, 31, 64);
+    border-top-color: transparent;
+    transform: rotateZ(-45deg);
+}
+
+.card .right .productInfo .details .rate-left .container-reputation-top div:nth-of-type(3) {
+    border-top-color: rgb(203, 31, 64);
+}
+
+.card .right .productInfo .details .rate-left .container-reputation-top p {
+    transform: rotateZ(45deg);
+    font-size: 14px;
+    margin: 10px 5px;
+    overflow: hidden;
+}
+
+.card .right .productInfo .details .rate-left .container-reputation-top div:nth-of-type(3) p {
+    margin: 12px 2px;
+    font-size: 12px;
+}
+
+.card .right .productInfo .details .rate-left .container-reputation-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card .right .productInfo .details .rate-left .container-sellerName {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    margin: 8px 0;
+}
+
+.card .right .productInfo .details .rate-left .container-sellerName > i {
+    cursor: pointer;
+}
+
+.card .right .productInfo .details .rate-left .sellerName {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 14px;
+    padding-right: 55px;
+}
+
+.card .right .productInfo .details .rate-right {
+    text-align: center;
+}
+
+.card .right .productInfo .details .rate-right h4 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.card .right .productInfo button {
+    height: 48px;
+    background: #cb2140;
+    border-radius: 90px;
+    font-weight: 300;
+    line-height: 35px;
+    font-size: 14px;
+    padding: 0 24px;
+    color: #fff;
+}
+
+.card .right .productInfo i.fav {
+    font-size: 12px;
+    margin: 0 12px 0 24px;
+    color: #cb2140;
+}
+
+.card .right .productInfo a {
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.3;
+    text-decoration: none;
+}
+
+.card .right .productInfo h3 {
+    width: 80px;
+    height: 80px;
+    font-weight: 300;
+    line-height: 80px;
+    font-size: 16px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.card .right .productInfo h3:after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #cb1f40;
+    border-top-color: transparent;
+    transform: rotate(-45deg) translate(-50%, -50%);
+}
+
+.card .right .productInfo h4 {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+/* .card .right .productInfo p {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: normal;
+    text-align: center;
+    font-weight: 300px;
+    line-height: 28px;
+    font-size: 14px;
+    border-radius: 50%;
+    transition: 0.3s linear;
+    border: 1px solid transparent;
+    cursor: pointer;
+} */
+
+/* .card .right .productInfo p:hover {
+    border: 1px solid #cb1f40;
+}
+
+.card .right .productInfo p:nth-of-type(1) {
+    border: 1px solid #cb1f40;
+} */
+
+.slider {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 70px;
+    text-align: center;
+    margin-left: -30px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+    color: #cb1f40;
+    cursor: pointer;
+}
+
+.slider:nth-of-type(2) {
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 576px) {
+    .card {
+        transform: rotate(90deg) scale(0.7) translate(calc(50% - 25vh), 50%);
+        position: static;
+    }
+}
+
+
+/* ################################################    SLIDER DOTS    ############################################################ */
+
+
+.slider-container {
+    position: relative;
+    transform: translate(-50%, -80%);
+    width: 450px;
+    overflow: hidden;
+    /* border: 2px solid #ddd; */
+    border-radius: 8px;
+    /* background-color: #fff; */
+}
+
+.slider-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-image {
+    width: 450px;
+    height: auto;
+    object-fit: cover;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -350%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+/* Hide all images except the first one */
+.slider-images input:nth-child(1):checked~.slider-images {
+    transform: translateX(0);
+}
+
+.slider-images input:nth-child(2):checked~.slider-images {
+    transform: translateX(-150px);
+}
+
+.slider-images input:nth-child(3):checked~.slider-images {
+    transform: translateX(-300px);
+}
+
+/* Hide input elements (radio buttons) */
+.slider-container input {
+    display: none;
+}
+
+
+/* ################################################    CART    ############################################################ */
 
 
 #body-cart {
@@ -766,7 +1128,8 @@ body {
     column-gap: 6px;
 }
 
-.text-subtotal-left, .text-fsi-left{
+.text-subtotal-left,
+.text-fsi-left {
     max-width: 10rem;
 }
 
